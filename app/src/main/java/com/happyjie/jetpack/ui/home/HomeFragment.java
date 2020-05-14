@@ -4,22 +4,22 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
+import com.happyjie.jetpack.exoplayer.PageListPlayManager;
+import com.happyjie.jetpack.model.Feed;
+import com.happyjie.jetpack.ui.AbsListFragment;
+import com.happyjie.jetpack.ui.MutablePageKeyedDataSource;
+import com.happyjie.libnavannotation.FragmentDestination;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 import androidx.paging.ItemKeyedDataSource;
 import androidx.paging.PagedList;
 import androidx.paging.PagedListAdapter;
-
-import com.happyjie.libnavannotation.FragmentDestination;
-import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
-import com.happyjie.jetpack.exoplayer.PageListPlayManager;
-import com.happyjie.jetpack.model.Feed;
-import com.happyjie.jetpack.ui.AbsListFragment;
-import com.happyjie.jetpack.ui.MutablePageKeyedDataSource;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-
-import java.util.List;
 
 @FragmentDestination(pageUrl = "main/tabs/home", asStarter = true)
 public class HomeFragment extends AbsListFragment<Feed, HomeViewModel> {

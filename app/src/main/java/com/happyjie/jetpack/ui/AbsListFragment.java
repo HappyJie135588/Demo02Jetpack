@@ -5,6 +5,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.LayoutRefreshViewBinding;
+import com.happyjie.libcommon.view.EmptyView;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
@@ -15,17 +26,6 @@ import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.view.EmptyView;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.LayoutRefreshViewBinding;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.constant.RefreshState;
-import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 
 public abstract class AbsListFragment<T, M extends AbsViewModel<T>> extends Fragment implements OnRefreshListener, OnLoadMoreListener {
     protected LayoutRefreshViewBinding binding;

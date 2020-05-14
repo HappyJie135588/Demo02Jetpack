@@ -3,15 +3,15 @@ package com.happyjie.jetpack.ui.detail;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.FragmentActivity;
-
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.databinding.LayoutFeedDetailTypeVideoBinding;
 import com.happyjie.jetpack.databinding.LayoutFeedDetailTypeVideoHeaderBinding;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.view.FullScreenPlayerView;
+
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.FragmentActivity;
 
 public class VideoViewHandler extends ViewHandler {
     private final CoordinatorLayout coordinator;

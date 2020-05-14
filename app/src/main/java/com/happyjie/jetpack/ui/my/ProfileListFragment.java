@@ -4,16 +4,16 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.paging.PagedList;
-import androidx.paging.PagedListAdapter;
-
 import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
 import com.happyjie.jetpack.exoplayer.PageListPlayManager;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.ui.AbsListFragment;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.paging.PagedList;
+import androidx.paging.PagedListAdapter;
 
 public class ProfileListFragment extends AbsListFragment<Feed, ProfileViewModel> {
     private String tabType;

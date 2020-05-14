@@ -1,13 +1,13 @@
 package com.happyjie.jetpack.ui;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;
 import androidx.paging.ItemKeyedDataSource;
 import androidx.paging.PagedList;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * 一个可变更的ItemKeyedDataSource 数据源

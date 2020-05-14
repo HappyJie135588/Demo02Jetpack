@@ -5,11 +5,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.paging.ItemKeyedDataSource;
-import androidx.paging.PagedList;
-
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.ui.InteractionPresenter;
@@ -17,6 +12,11 @@ import com.happyjie.jetpack.ui.MutableItemKeyedDataSource;
 import com.happyjie.jetpack.ui.home.FeedAdapter;
 import com.happyjie.jetpack.ui.login.UserManager;
 import com.happyjie.jetpack.utils.TimeUtils;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.paging.ItemKeyedDataSource;
+import androidx.paging.PagedList;
 
 public class ProfileListAdapter extends FeedAdapter {
     public ProfileListAdapter(Context context, String category) {

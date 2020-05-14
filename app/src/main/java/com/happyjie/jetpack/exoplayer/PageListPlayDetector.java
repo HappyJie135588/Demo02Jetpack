@@ -3,14 +3,14 @@ package com.happyjie.jetpack.exoplayer;
 import android.util.Pair;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 列表视频自动播放 检测逻辑

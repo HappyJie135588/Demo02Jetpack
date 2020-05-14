@@ -4,6 +4,13 @@ import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.LayoutFeedDetailBottomInateractionBinding;
+import com.happyjie.jetpack.model.Comment;
+import com.happyjie.jetpack.model.Feed;
+import com.happyjie.libcommon.utils.PixUtils;
+import com.happyjie.libcommon.view.EmptyView;
+
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
@@ -12,13 +19,6 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.paging.PagedList;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.utils.PixUtils;
-import com.happyjie.libcommon.view.EmptyView;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.LayoutFeedDetailBottomInateractionBinding;
-import com.happyjie.jetpack.model.Comment;
-import com.happyjie.jetpack.model.Feed;
 
 public abstract class ViewHandler {
     private final FeedDetailViewModel viewModel;

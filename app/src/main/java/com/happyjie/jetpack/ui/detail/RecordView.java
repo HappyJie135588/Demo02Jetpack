@@ -12,10 +12,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 
-import androidx.annotation.Nullable;
-
-import com.happyjie.libcommon.utils.PixUtils;
 import com.happyjie.jetpack.R;
+import com.happyjie.libcommon.utils.PixUtils;
+
+import androidx.annotation.Nullable;
 
 
 public class RecordView extends View {

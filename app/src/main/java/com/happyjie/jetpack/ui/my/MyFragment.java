@@ -5,17 +5,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.fragment.app.Fragment;
-
-import com.happyjie.libcommon.utils.StatusBar;
-import com.happyjie.libnavannotation.FragmentDestination;
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.databinding.FragmentMyBinding;
 import com.happyjie.jetpack.model.User;
 import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libcommon.utils.StatusBar;
+import com.happyjie.libnavannotation.FragmentDestination;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 
 @FragmentDestination(pageUrl = "main/tabs/my", needLogin = true)
 public class MyFragment extends Fragment {

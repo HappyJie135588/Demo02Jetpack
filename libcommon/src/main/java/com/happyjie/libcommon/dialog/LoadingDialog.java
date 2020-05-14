@@ -8,12 +8,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-
 import com.happyjie.libcommon.R;
 import com.happyjie.libcommon.utils.PixUtils;
 import com.happyjie.libcommon.view.ViewHelper;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 
 public class LoadingDialog extends AlertDialog {
     private TextView loadingText;

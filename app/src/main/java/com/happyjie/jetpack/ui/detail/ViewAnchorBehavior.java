@@ -5,11 +5,11 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.libcommon.utils.PixUtils;
+
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-
-import com.happyjie.libcommon.utils.PixUtils;
-import com.happyjie.jetpack.R;
 
 public class ViewAnchorBehavior extends CoordinatorLayout.Behavior<View> {
     private int extraUsed;

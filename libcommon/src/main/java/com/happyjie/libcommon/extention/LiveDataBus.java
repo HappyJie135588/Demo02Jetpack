@@ -1,13 +1,13 @@
 package com.happyjie.libcommon.extention;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
-
-import java.util.concurrent.ConcurrentHashMap;
 
 public class LiveDataBus {
 

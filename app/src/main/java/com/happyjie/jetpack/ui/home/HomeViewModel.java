@@ -2,27 +2,27 @@ package com.happyjie.jetpack.ui.home;
 
 import android.util.Log;
 
+import com.alibaba.fastjson.TypeReference;
+import com.happyjie.jetpack.model.Feed;
+import com.happyjie.jetpack.ui.AbsViewModel;
+import com.happyjie.jetpack.ui.MutablePageKeyedDataSource;
+import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
+import com.happyjie.libnetwork.JsonCallback;
+import com.happyjie.libnetwork.Request;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
 import androidx.paging.ItemKeyedDataSource;
 import androidx.paging.PagedList;
-
-import com.alibaba.fastjson.TypeReference;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
-import com.happyjie.libnetwork.JsonCallback;
-import com.happyjie.libnetwork.Request;
-import com.happyjie.jetpack.ui.AbsViewModel;
-import com.happyjie.jetpack.model.Feed;
-import com.happyjie.jetpack.ui.MutablePageKeyedDataSource;
-import com.happyjie.jetpack.ui.login.UserManager;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class HomeViewModel extends AbsViewModel<Feed> {
 

@@ -8,14 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.OverScroller;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.view.FullScreenPlayerView;
+import com.happyjie.libcommon.utils.PixUtils;
+
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
 import androidx.customview.widget.ViewDragHelper;
-
-import com.happyjie.libcommon.utils.PixUtils;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.view.FullScreenPlayerView;
 
 public class ViewZoomBehavior extends CoordinatorLayout.Behavior<FullScreenPlayerView> {
     private OverScroller overScroller;

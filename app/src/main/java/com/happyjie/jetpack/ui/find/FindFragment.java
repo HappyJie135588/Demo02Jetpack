@@ -2,14 +2,14 @@ package com.happyjie.jetpack.ui.find;
 
 import android.text.TextUtils;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
-
-import com.happyjie.libnavannotation.FragmentDestination;
 import com.happyjie.jetpack.model.SofaTab;
 import com.happyjie.jetpack.ui.sofa.SofaFragment;
 import com.happyjie.jetpack.utils.AppConfig;
+import com.happyjie.libnavannotation.FragmentDestination;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 
 
 @FragmentDestination(pageUrl = "main/tabs/find")

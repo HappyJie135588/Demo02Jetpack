@@ -3,12 +3,12 @@ package com.happyjie.jetpack.ui.publish;
 import android.content.Context;
 import android.text.TextUtils;
 
+import com.happyjie.libcommon.utils.FileUploadManager;
+
 import androidx.annotation.NonNull;
 import androidx.work.Data;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
-
-import com.happyjie.libcommon.utils.FileUploadManager;
 
 public class UploadFileWorker extends Worker {
     public UploadFileWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {

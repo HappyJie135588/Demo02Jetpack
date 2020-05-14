@@ -2,11 +2,11 @@ package com.happyjie.jetpack.model;
 
 import android.text.TextUtils;
 
+import java.io.Serializable;
+
 import androidx.annotation.Nullable;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
-
-import java.io.Serializable;
 
 public class Feed extends BaseObservable implements Serializable {
 

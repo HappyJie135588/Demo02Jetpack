@@ -9,6 +9,26 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSONObject;
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.ActivityLayoutPublishBinding;
+import com.happyjie.jetpack.model.Feed;
+import com.happyjie.jetpack.model.TagList;
+import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libcommon.dialog.LoadingDialog;
+import com.happyjie.libcommon.utils.FileUtils;
+import com.happyjie.libcommon.utils.StatusBar;
+import com.happyjie.libnavannotation.ActivityDestination;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
+import com.happyjie.libnetwork.JsonCallback;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,26 +39,6 @@ import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkContinuation;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
-
-import com.alibaba.fastjson.JSONObject;
-import com.happyjie.libcommon.dialog.LoadingDialog;
-import com.happyjie.libcommon.utils.FileUtils;
-import com.happyjie.libcommon.utils.StatusBar;
-import com.happyjie.libnavannotation.ActivityDestination;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
-import com.happyjie.libnetwork.JsonCallback;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.ActivityLayoutPublishBinding;
-import com.happyjie.jetpack.model.Feed;
-import com.happyjie.jetpack.model.TagList;
-import com.happyjie.jetpack.ui.login.UserManager;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 
 @ActivityDestination(pageUrl = "main/tabs/publish", needLogin = true)
 public class PublishActivity extends AppCompatActivity implements View.OnClickListener {

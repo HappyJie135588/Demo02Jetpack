@@ -1,11 +1,11 @@
 package com.happyjie.jetpack.model;
 
+import java.io.Serializable;
+
 import androidx.annotation.Nullable;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 import androidx.databinding.library.baseAdapters.BR;
-
-import java.io.Serializable;
 
 public class Ugc extends BaseObservable implements Serializable {
     /**

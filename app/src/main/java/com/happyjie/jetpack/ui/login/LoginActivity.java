@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.model.User;
 import com.happyjie.libnetwork.ApiResponse;
 import com.happyjie.libnetwork.ApiService;
 import com.happyjie.libnetwork.JsonCallback;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.model.User;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.auth.QQToken;
 import com.tencent.connect.common.Constants;
@@ -22,6 +19,9 @@ import com.tencent.tauth.UiError;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private View actionClose;

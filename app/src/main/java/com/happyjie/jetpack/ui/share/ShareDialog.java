@@ -18,19 +18,19 @@ import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.view.PPImageView;
 import com.happyjie.libcommon.utils.PixUtils;
 import com.happyjie.libcommon.view.CornerFrameLayout;
 import com.happyjie.libcommon.view.ViewHelper;
-import com.happyjie.jetpack.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class ShareDialog extends AlertDialog {
 

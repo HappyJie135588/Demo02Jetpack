@@ -19,6 +19,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.ActivityLayoutCaptureBinding;
+import com.happyjie.jetpack.view.RecordView;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -34,17 +45,6 @@ import androidx.camera.core.VideoCapture;
 import androidx.camera.core.VideoCaptureConfig;
 import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
-
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.ActivityLayoutCaptureBinding;
-import com.happyjie.jetpack.view.RecordView;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 public class CaptureActivity extends AppCompatActivity {
     public static final int REQ_CAPTURE = 10001;

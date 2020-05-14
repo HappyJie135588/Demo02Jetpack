@@ -4,16 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import androidx.arch.core.executor.ArchTaskExecutor;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-
+import com.happyjie.jetpack.model.User;
 import com.happyjie.libcommon.global.AppGlobals;
 import com.happyjie.libnetwork.ApiResponse;
 import com.happyjie.libnetwork.ApiService;
 import com.happyjie.libnetwork.JsonCallback;
 import com.happyjie.libnetwork.cache.CacheManager;
-import com.happyjie.jetpack.model.User;
+
+import androidx.arch.core.executor.ArchTaskExecutor;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 public class  UserManager {
     private static final String KEY_CACHE_USER = "cache_user";

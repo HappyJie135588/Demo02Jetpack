@@ -5,27 +5,27 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.arch.core.executor.ArchTaskExecutor;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
-
 import com.alibaba.fastjson.JSONObject;
-import com.happyjie.libcommon.extention.LiveDataBus;
-import com.happyjie.libcommon.global.AppGlobals;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
-import com.happyjie.libnetwork.JsonCallback;
 import com.happyjie.jetpack.model.Comment;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.model.TagList;
 import com.happyjie.jetpack.model.User;
 import com.happyjie.jetpack.ui.login.UserManager;
 import com.happyjie.jetpack.ui.share.ShareDialog;
+import com.happyjie.libcommon.extention.LiveDataBus;
+import com.happyjie.libcommon.global.AppGlobals;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
+import com.happyjie.libnetwork.JsonCallback;
 
 import org.jetbrains.annotations.NotNull;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.arch.core.executor.ArchTaskExecutor;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
 
 public class InteractionPresenter {
 

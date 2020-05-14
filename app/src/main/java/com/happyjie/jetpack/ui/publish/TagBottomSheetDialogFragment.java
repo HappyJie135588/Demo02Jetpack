@@ -10,24 +10,24 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.model.TagList;
+import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libcommon.utils.PixUtils;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
+import com.happyjie.libnetwork.JsonCallback;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.happyjie.libcommon.utils.PixUtils;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
-import com.happyjie.libnetwork.JsonCallback;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.model.TagList;
-import com.happyjie.jetpack.ui.login.UserManager;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class TagBottomSheetDialogFragment extends BottomSheetDialogFragment {
     private RecyclerView recyclerView;

@@ -3,16 +3,16 @@ package com.happyjie.jetpack.ui.detail;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.FragmentActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.databinding.ActivityFeedDetailTypeImageBinding;
 import com.happyjie.jetpack.databinding.LayoutFeedDetailTypeImageHeaderBinding;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.view.PPImageView;
+
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class ImageViewHandler extends ViewHandler {
 

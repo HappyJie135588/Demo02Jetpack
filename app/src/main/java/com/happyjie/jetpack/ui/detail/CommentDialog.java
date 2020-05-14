@@ -16,12 +16,11 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatDialogFragment;
-import androidx.arch.core.executor.ArchTaskExecutor;
-import androidx.lifecycle.Observer;
-
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.LayoutCommentDialogBinding;
+import com.happyjie.jetpack.model.Comment;
+import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.jetpack.ui.publish.CaptureActivity;
 import com.happyjie.libcommon.dialog.LoadingDialog;
 import com.happyjie.libcommon.global.AppGlobals;
 import com.happyjie.libcommon.utils.FileUploadManager;
@@ -31,13 +30,14 @@ import com.happyjie.libcommon.view.ViewHelper;
 import com.happyjie.libnetwork.ApiResponse;
 import com.happyjie.libnetwork.ApiService;
 import com.happyjie.libnetwork.JsonCallback;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.LayoutCommentDialogBinding;
-import com.happyjie.jetpack.model.Comment;
-import com.happyjie.jetpack.ui.login.UserManager;
-import com.happyjie.jetpack.ui.publish.CaptureActivity;
 
 import java.util.concurrent.atomic.AtomicInteger;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatDialogFragment;
+import androidx.arch.core.executor.ArchTaskExecutor;
+import androidx.lifecycle.Observer;
 
 public class CommentDialog extends AppCompatDialogFragment implements View.OnClickListener {
     private LayoutCommentDialogBinding mBinding;

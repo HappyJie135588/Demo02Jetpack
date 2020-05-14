@@ -4,25 +4,25 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.happyjie.libcommon.utils.StatusBar;
 import com.happyjie.jetpack.model.Destination;
 import com.happyjie.jetpack.model.User;
 import com.happyjie.jetpack.ui.login.UserManager;
 import com.happyjie.jetpack.utils.AppConfig;
 import com.happyjie.jetpack.utils.NavGraphBuilder;
 import com.happyjie.jetpack.view.AppBottomBar;
+import com.happyjie.libcommon.utils.StatusBar;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 /**
  * App 主页 入口

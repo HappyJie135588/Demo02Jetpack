@@ -4,11 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.happyjie.jetpack.model.Feed;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-
-import com.happyjie.jetpack.model.Feed;
 
 public class FeedDetailActivity extends AppCompatActivity {
     private static final String KEY_FEED = "key_feed";

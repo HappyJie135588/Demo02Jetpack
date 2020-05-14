@@ -1,9 +1,9 @@
 package com.happyjie.jetpack.model;
 
+import java.io.Serializable;
+
 import androidx.annotation.Nullable;
 import androidx.databinding.BaseObservable;
-
-import java.io.Serializable;
 
 public class Comment extends BaseObservable implements Serializable {
     public static final int COMMENT_TYPE_VIDEO = 3;

@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.libcommon.utils.StatusBar;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.happyjie.libcommon.utils.StatusBar;
-import com.happyjie.jetpack.R;
 
 public class UserBehaviorListActivity extends AppCompatActivity {
     public static final int BEHAVIOR_FAVORITE = 0;

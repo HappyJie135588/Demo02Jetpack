@@ -10,8 +10,8 @@ import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
-import com.happyjie.libcommon.global.AppGlobals;
 import com.happyjie.jetpack.R;
+import com.happyjie.libcommon.global.AppGlobals;
 
 public class PageListPlay {
     public SimpleExoPlayer exoPlayer;

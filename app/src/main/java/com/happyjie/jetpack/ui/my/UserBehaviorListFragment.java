@@ -3,17 +3,17 @@ package com.happyjie.jetpack.ui.my;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.paging.PagedList;
-import androidx.paging.PagedListAdapter;
-
 import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
 import com.happyjie.jetpack.exoplayer.PageListPlayManager;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.ui.AbsListFragment;
 import com.happyjie.jetpack.ui.home.FeedAdapter;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.paging.PagedList;
+import androidx.paging.PagedListAdapter;
 
 public class UserBehaviorListFragment extends AbsListFragment<Feed, UserBehaviorViewModel> {
     private static final String CATEGORY = "user_behavior_list";

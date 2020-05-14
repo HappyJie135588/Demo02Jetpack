@@ -1,13 +1,13 @@
 package com.happyjie.jetpack.ui;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;
 import androidx.paging.PageKeyedDataSource;
 import androidx.paging.PagedList;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * 具体原理见 {@link MutableItemKeyedDataSource}

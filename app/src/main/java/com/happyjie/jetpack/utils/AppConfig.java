@@ -4,10 +4,10 @@ import android.content.res.AssetManager;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.happyjie.libcommon.global.AppGlobals;
 import com.happyjie.jetpack.model.BottomBar;
 import com.happyjie.jetpack.model.Destination;
 import com.happyjie.jetpack.model.SofaTab;
+import com.happyjie.libcommon.global.AppGlobals;
 
 import java.io.BufferedReader;
 import java.io.IOException;

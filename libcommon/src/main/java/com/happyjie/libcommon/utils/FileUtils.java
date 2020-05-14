@@ -4,14 +4,14 @@ import android.graphics.Bitmap;
 import android.media.MediaMetadataRetriever;
 import android.os.Environment;
 
-import androidx.arch.core.executor.ArchTaskExecutor;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+import androidx.arch.core.executor.ArchTaskExecutor;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 public class FileUtils {
     /**

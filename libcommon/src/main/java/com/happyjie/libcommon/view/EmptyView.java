@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.happyjie.libcommon.R;
+
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
-import com.happyjie.libcommon.R;
 
 public class EmptyView extends LinearLayout {
     private ImageView icon;

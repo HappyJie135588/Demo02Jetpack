@@ -4,12 +4,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.paging.ItemKeyedDataSource;
-import androidx.paging.PagedList;
-import androidx.paging.PagedListAdapter;
-
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.model.TagList;
 import com.happyjie.jetpack.ui.AbsListFragment;
@@ -17,6 +11,12 @@ import com.happyjie.jetpack.ui.MutableItemKeyedDataSource;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.paging.ItemKeyedDataSource;
+import androidx.paging.PagedList;
+import androidx.paging.PagedListAdapter;
 
 public class TagListFragment extends AbsListFragment<TagList, TagListViewModel> {
     public static final String KEY_TAG_TYPE = "tag_type";

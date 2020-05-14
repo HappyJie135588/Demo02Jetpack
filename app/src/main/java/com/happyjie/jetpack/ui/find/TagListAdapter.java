@@ -5,15 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.happyjie.jetpack.databinding.LayoutTagListItemBinding;
+import com.happyjie.jetpack.model.TagList;
+import com.happyjie.jetpack.ui.InteractionPresenter;
+import com.happyjie.libcommon.extention.AbsPagedListAdapter;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.extention.AbsPagedListAdapter;
-import com.happyjie.jetpack.databinding.LayoutTagListItemBinding;
-import com.happyjie.jetpack.model.TagList;
-import com.happyjie.jetpack.ui.InteractionPresenter;
 
 public class TagListAdapter extends AbsPagedListAdapter<TagList, TagListAdapter.ViewHolder> {
     private LayoutInflater mInflater;

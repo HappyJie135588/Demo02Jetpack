@@ -7,21 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.paging.ItemKeyedDataSource;
-import androidx.paging.PagedList;
-import androidx.recyclerview.widget.DiffUtil;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.extention.AbsPagedListAdapter;
-import com.happyjie.libcommon.utils.PixUtils;
 import com.happyjie.jetpack.databinding.LayoutFeedCommentListItemBinding;
 import com.happyjie.jetpack.model.Comment;
 import com.happyjie.jetpack.ui.InteractionPresenter;
 import com.happyjie.jetpack.ui.MutableItemKeyedDataSource;
 import com.happyjie.jetpack.ui.login.UserManager;
 import com.happyjie.jetpack.ui.publish.PreviewActivity;
+import com.happyjie.libcommon.extention.AbsPagedListAdapter;
+import com.happyjie.libcommon.utils.PixUtils;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.paging.ItemKeyedDataSource;
+import androidx.paging.PagedList;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class FeedCommentAdapter extends AbsPagedListAdapter<Comment, FeedCommentAdapter.ViewHolder> {
     private LayoutInflater mInflater;

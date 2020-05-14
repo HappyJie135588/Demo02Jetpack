@@ -1,21 +1,21 @@
 package com.happyjie.jetpack.ui.find;
 
-import androidx.annotation.NonNull;
-import androidx.arch.core.executor.ArchTaskExecutor;
-import androidx.lifecycle.MutableLiveData;
-import androidx.paging.ItemKeyedDataSource;
-
 import com.alibaba.fastjson.TypeReference;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
 import com.happyjie.jetpack.model.TagList;
 import com.happyjie.jetpack.ui.AbsViewModel;
 import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.annotation.NonNull;
+import androidx.arch.core.executor.ArchTaskExecutor;
+import androidx.lifecycle.MutableLiveData;
+import androidx.paging.ItemKeyedDataSource;
 
 public class TagListViewModel extends AbsViewModel<TagList> {
     private String tagType;

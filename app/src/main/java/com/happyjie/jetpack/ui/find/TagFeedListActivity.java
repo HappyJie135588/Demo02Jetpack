@@ -7,6 +7,24 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.ActivityLayoutTagFeedListBinding;
+import com.happyjie.jetpack.databinding.LayoutTagFeedListHeaderBinding;
+import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
+import com.happyjie.jetpack.exoplayer.PageListPlayManager;
+import com.happyjie.jetpack.model.Feed;
+import com.happyjie.jetpack.model.TagList;
+import com.happyjie.jetpack.ui.home.FeedAdapter;
+import com.happyjie.libcommon.extention.AbsPagedListAdapter;
+import com.happyjie.libcommon.utils.PixUtils;
+import com.happyjie.libcommon.utils.StatusBar;
+import com.happyjie.libcommon.view.EmptyView;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,24 +36,6 @@ import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.extention.AbsPagedListAdapter;
-import com.happyjie.libcommon.utils.PixUtils;
-import com.happyjie.libcommon.utils.StatusBar;
-import com.happyjie.libcommon.view.EmptyView;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.ActivityLayoutTagFeedListBinding;
-import com.happyjie.jetpack.databinding.LayoutTagFeedListHeaderBinding;
-import com.happyjie.jetpack.exoplayer.PageListPlayDetector;
-import com.happyjie.jetpack.exoplayer.PageListPlayManager;
-import com.happyjie.jetpack.model.Feed;
-import com.happyjie.jetpack.model.TagList;
-import com.happyjie.jetpack.ui.home.FeedAdapter;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.constant.RefreshState;
-import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 public class TagFeedListActivity extends AppCompatActivity implements View.OnClickListener, OnRefreshListener, OnLoadMoreListener {
     public static final String KEY_TAG_LIST = "tag_list";

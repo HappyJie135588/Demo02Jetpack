@@ -7,10 +7,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.bumptech.glide.Glide;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
@@ -26,6 +22,10 @@ import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.databinding.ActivityLayoutPreviewBinding;
 
 import java.io.File;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 public class PreviewActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityLayoutPreviewBinding mPreviewBinding;

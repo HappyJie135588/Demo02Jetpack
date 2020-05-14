@@ -9,22 +9,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+import com.happyjie.jetpack.databinding.FragmentSofaBinding;
+import com.happyjie.jetpack.model.SofaTab;
+import com.happyjie.jetpack.ui.home.HomeFragment;
+import com.happyjie.jetpack.utils.AppConfig;
+import com.happyjie.libnavannotation.FragmentDestination;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
-import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
-import com.happyjie.libnavannotation.FragmentDestination;
-import com.happyjie.jetpack.databinding.FragmentSofaBinding;
-import com.happyjie.jetpack.model.SofaTab;
-import com.happyjie.jetpack.ui.home.HomeFragment;
-import com.happyjie.jetpack.utils.AppConfig;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 @FragmentDestination(pageUrl = "main/tabs/sofa", asStarter = false)

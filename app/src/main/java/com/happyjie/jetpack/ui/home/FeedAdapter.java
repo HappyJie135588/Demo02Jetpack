@@ -6,16 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.Observer;
-import androidx.recyclerview.widget.DiffUtil;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.happyjie.libcommon.extention.AbsPagedListAdapter;
-import com.happyjie.libcommon.extention.LiveDataBus;
 import com.happyjie.jetpack.BR;
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.databinding.LayoutFeedTypeImageBinding;
@@ -24,6 +14,16 @@ import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.ui.InteractionPresenter;
 import com.happyjie.jetpack.ui.detail.FeedDetailActivity;
 import com.happyjie.jetpack.view.ListPlayerView;
+import com.happyjie.libcommon.extention.AbsPagedListAdapter;
+import com.happyjie.libcommon.extention.LiveDataBus;
+
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class FeedAdapter extends AbsPagedListAdapter<Feed, FeedAdapter.ViewHolder> {
     private final LayoutInflater inflater;

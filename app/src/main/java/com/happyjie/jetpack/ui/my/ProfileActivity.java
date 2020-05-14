@@ -4,6 +4,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+import com.happyjie.jetpack.R;
+import com.happyjie.jetpack.databinding.ActivityLayoutProfileBinding;
+import com.happyjie.jetpack.model.User;
+import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libcommon.utils.StatusBar;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,15 +20,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
-import com.happyjie.libcommon.utils.StatusBar;
-import com.happyjie.jetpack.R;
-import com.happyjie.jetpack.databinding.ActivityLayoutProfileBinding;
-import com.happyjie.jetpack.model.User;
-import com.happyjie.jetpack.ui.login.UserManager;
 
 public class ProfileActivity extends AppCompatActivity {
     private ActivityLayoutProfileBinding mBinding;

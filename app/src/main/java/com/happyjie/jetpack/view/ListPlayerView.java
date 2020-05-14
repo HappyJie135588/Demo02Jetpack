@@ -12,19 +12,19 @@ import android.view.ViewParent;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
-import com.happyjie.libcommon.utils.PixUtils;
 import com.happyjie.jetpack.R;
 import com.happyjie.jetpack.exoplayer.IPlayTarget;
 import com.happyjie.jetpack.exoplayer.PageListPlay;
 import com.happyjie.jetpack.exoplayer.PageListPlayManager;
+import com.happyjie.libcommon.utils.PixUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 列表视频播放专用

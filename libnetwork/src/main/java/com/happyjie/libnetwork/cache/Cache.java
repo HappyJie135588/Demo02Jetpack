@@ -1,10 +1,10 @@
 package com.happyjie.libnetwork.cache;
 
+import java.io.Serializable;
+
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
-import java.io.Serializable;
 
 @Entity(tableName = "cache" //表名
         // , indices = {@Index(value = "key", unique = false)}//本表索引，用于大量数据的查询优化，unique有时候需要保证数据表的某个或者某些字段只有唯一的记录，可以通过设置@Index注解的unique属性实现。以下实例代码实现了避免有两条记录包含一样的key值。

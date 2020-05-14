@@ -1,19 +1,19 @@
 package com.happyjie.jetpack.ui.my;
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.MutableLiveData;
-import androidx.paging.ItemKeyedDataSource;
-
 import com.alibaba.fastjson.TypeReference;
-import com.happyjie.libnetwork.ApiResponse;
-import com.happyjie.libnetwork.ApiService;
 import com.happyjie.jetpack.model.Feed;
 import com.happyjie.jetpack.ui.AbsViewModel;
 import com.happyjie.jetpack.ui.login.UserManager;
+import com.happyjie.libnetwork.ApiResponse;
+import com.happyjie.libnetwork.ApiService;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.MutableLiveData;
+import androidx.paging.ItemKeyedDataSource;
 
 public class UserBehaviorViewModel extends AbsViewModel<Feed> {
     private int mBehavior;
