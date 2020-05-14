@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="com.happyjie.jetpack/app" />
+      <module fileurl="file://$PROJECT_DIR$/com.happyjie.jetpack.iml" filepath="$PROJECT_DIR$/com.happyjie.jetpack.iml" group="com.happyjie.jetpack" />
+      <module fileurl="file://$PROJECT_DIR$/libcommon/libcommon.iml" filepath="$PROJECT_DIR$/libcommon/libcommon.iml" group="com.happyjie.jetpack/libcommon" />
+      <module fileurl="file://$PROJECT_DIR$/libnavannotation/libnavannotation.iml" filepath="$PROJECT_DIR$/libnavannotation/libnavannotation.iml" group="com.happyjie.jetpack/libnavannotation" />
+      <module fileurl="file://$PROJECT_DIR$/libnavcompiler/libnavcompiler.iml" filepath="$PROJECT_DIR$/libnavcompiler/libnavcompiler.iml" group="com.happyjie.jetpack/libnavcompiler" />
+      <module fileurl="file://$PROJECT_DIR$/libnetwork/libnetwork.iml" filepath="$PROJECT_DIR$/libnetwork/libnetwork.iml" group="com.happyjie.jetpack/libnetwork" />
+    </modules>
+  </component>
+</project>
